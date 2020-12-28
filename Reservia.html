@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Reservia.css"/> <!--la ligne qui relie mon html au css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/> <!--la ligne qui me permet d'avoir les icones-->
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> <!--la ligne qui me permet de charger la nouvelle police-->
+    <meta name="viewport" content="width=device-width"/>
+    <title>Reservia</title>
+   </head>
+<body>
+
+<header> <!--j'ai séparé le header en 2 parties pour séparer les 2 nav-->
+ 
+<div class="navleft"> <!--ici la partie gauche-->
+<h1>Reservia</h1>
+<p>Trouver votre hébergement pour des vacanes de rêve <br>En plein centre ville ou en pleine campagne</p>
+ 
+ <label for="site-search"></label> <!--le code pour la création du bouton de recherche-->
+<input type="search" id="site-search" name="q"
+       aria-label="Search through site content">
+<button>Rechercher</button>
+
+<nav class="menu-nav1"> 
+<ul>
+<li class="btn1"><a href=""><i class="fa fa-usd"></i> Economique</a>
+</li>
+<li class="btn1"><a href=""><i class="fa fa-child"></i> Famillial</a>
+</li>
+<li class="btn1"><a href=""><i class="fa fa-heart"></i> Romantique</a>
+</li>
+</ul>
+</nav>
+
+<p><i class="fa fa-info"></i> Plus de 500 logements disponible dans cette ville</p>
+</div>
+
+ <div class="navright"> <!--/*ici la partie droite*/ -->
+    <nav class="menu-nav">
+       <ul>
+       <li class="btn"><a href="#Hébergement Marseille">Hébergements</a> <!--création d'une ancre-->
+       </li>
+       <li class="btn"><a href="#Activités à Marseille">Activités</a>
+       </li>
+       <li class="btn"><a href="">S'inscrire</a>
+       </li>
+       </ul>
+       </nav>
+   </div>
+</header>
+
+<main> <!--j'ai séparé le main en 2 parties-->
+<div class="left">
+<h2 id="Hébergement Marseille">Hébergement Marseille</h2> 
+<div class="image1">
+<figure><img src="1.jpg" alt="Hebergement"/><figcaption><a href="">Hotel les Mouettes</a></figcaption></figure> <!--la partie gauche ou j'ai ajouté des figures avec une légende-->
+<figure><img src="2.jpg" alt="Hebergement"/><figcaption><a href="">Hotel chez Amina</a></figcaption></figure>
+<figure><img src="3.jpg" alt="Hebergement"/><figcaption><a href="">Hotel Tout Bleu et Blanc</a></figcaption></figure>
+<figure><img src="4.jpg" alt="Hebergement"/><figcaption><a href="">Hotel du Port</a></figcaption></figure>
+<figure><img src="5.jpg" alt="Hebergement"/><figcaption><a href="">Auberge de la Cannebière</a></figcaption></figure>
+<figure><img src="6.jpg" alt="Hebergement"/><figcaption><a href="">Auberge Le Panier</a></figcaption></figure>
+</div>
+</div>
+
+<div class="right">
+<h2>Les plus populaires</h2> <!--la partie droite des images classiques pour pouvoir centrer un texte à coté de l'image-->
+<div class="image2">
+<p><img src="7.jpg" class="imageflotante" alt="Hebergement"/><p style="line-height:150px;"> <a href="">Hôtel de la mer</a></p>
+<p><img src="8.jpg" class="imageflotante" alt="Hebergement"/><p style="line-height:150px;"> <a href="">Au coeur de l'eau</a></p>
+<p><img src="9.jpg" class="imageflotante" alt="Hebergement"/><p style="line-height:150px;"> <a href="">Hôtel Le soleil du matin</a></p>
+</div>
+</div>
+</main>
+
+<div class="titresolo"><h2 id="Activités à Marseille">Activités à Marseille</h2></div> <!-- en dessous du main j'ai centré les figures et utilisé float pour les disposer -->
+<div class="enbas">
+    <figure><img class="imga1" src="a1.jpg" alt="Hebergement"/><figcaption><a href="">Notre Dame de la Garde</a></figcaption><img class="imga2" src="a2.jpg" alt="Hebergement"/><figcaption><a href="">Ile du Frioul</a></figcaption></figure>
+    
+    <figure><img class="imga3" src="a3.jpg" alt="Hebergement"/><figcaption><a href="">Parc National des Calanques</a></figcaption></figure>
+    <figure><img class="imga4" src="a4.jpg" alt="Hebergement"/><figcaption><a href="">Parc Longchamp</a></figcaption><img class="imga5" src="a5.jpg" alt="Hebergement"/><figcaption><a href="">Fort de Pornegues</a></figcaption></figure>
+    
+    <figure><img class="imga6" src="a6.jpg" alt="Hebergement"/><figcaption><a href="">Vieux Port</a></figcaption></figure>
+</div>
+
+
+<footer> <!--j'ai séparé le footer en 3 parties-->
+
+<div class="fgauche">
+<h3>A Propos</h3>
+<p>Fontionnement du site</p>
+<p>Conditions générales de vente</p>
+<p>Données et confidentialité</p>
+</div>
+
+
+<div class="fcentre">
+<h3>Nos hébergements</h3>
+<p>Charte qualité</p>
+<p>Soumettre votre hôtel</p>
+</div>
+
+<div class="fdroite">
+<h3>Assistance</h3>
+<p>Centre d'aide</p>
+<p>Nous contacter</p>
+</div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+
+html{
+    font-family: 'Raleway'; /*j'ai appliqué la même police à tous le site*/
+}
+
+h1{
+    color: slateblue; /*la couleur du titre principale*/
+}
+
+body{
+    flex-wrap: wrap; 
+}
+
+input{
+    background-color: white; /*modification barre de recherche*/
+    padding: 8px;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+}
+
+button{
+    color: white; /*modif bouton de la barre de recherche*/
+    background-color: blue;
+    padding: 8px;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+
+header{
+    display: flex; /*les éléments dans du header s'alignent côte à côte*/
+}
+
+.navleft{
+    background-color: white; /*la partie gauche du header prend 60% de la page et j'ai ajouté une marge à gauche*/
+    width: 60%;
+    margin-left: 38px;
+    flex-wrap: wrap;
+}
+
+.navright
+{
+    background-color: white; /*la partie droite du header prend 40% de la page et j'ai ajouté une marge à droite*/
+    width: 40%;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-nav1 li{ /*personnalisation du menu nav gauche*/
+    border: 2px solid #bbb;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav.menu-nav1 ul li 
+{
+  display: inline-block; /*les catégories de la nav sont alignés et j'ai supprimé la puce*/
+  list-style-type: none;
+}
+
+nav.menu-nav1 a { /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
+  color: black;
+  text-decoration: none;
+  background-color: none;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+nav.menu-nav1 li.btn1:hover a { /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
+  color: blue;
+  background-color: none;
+}
+
+.menu-nav1 
+{
+  text-align: left;
+}
+
+nav.menu-nav ul li 
+{
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav.menu-nav a { /*le texte des catégories du mena nav en haut à droite sont écris en gris*/
+  color: grey;
+  text-decoration: none;
+  background-color: none;
+  padding: 10px;
+  font-size: 15px;
+}
+
+nav.menu-nav li.btn:hover a { /*quand on passe sur le texte avec la souris il devient bleu*/
+  color: blue;
+}
+
+.menu-nav
+{
+  text-align: right; /*j'ai disposé le texte à droite de son bloc*/
+}
+
+main{
+    display: flex; /*le contenu du main sont disposé côte à côte avec de l'espace entre eux*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.left a, .right a, .enbas a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+    text-decoration: none;
+    color: black;
+}
+
+.left{
+    width: 60%; /*la partie gauche du main mesure 60% de la page, j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
+    background-color: #F2F2F2;
+    border: 2px none;
+    border-radius: 8px;
+}
+
+.left h2{
+    margin-left: 42px;
+}
+
+.left img{ /*taille des images avec la même bordure qu'auparavant*/
+    width: 180px;
+    height: 140px;
+    border: 2px none;
+    border-radius: 8px;
+}
+
+.left figure{ /*le texte des figures centré avec l'image*/
+    text-align: center;
+}
+
+.image1
+{
+    display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+figcaption{ /*la description des figures à un fond blanc*/
+    background-color: white;
+}
+
+.right{
+    width: 32%;
+    background-color: #F2F2F2;
+    border: 2px none;
+    border-radius: 8px;
+}
+
+.right h2{
+    margin-left: 60px;
+}
+
+.right img{
+    width: 180px;
+    height: 140px;
+    border: 2px none;
+    border-radius: 8px;
+}
+
+.image2 .imageflotante{ /*grace à la balise float on peut écrire à droite des images de la partie droite du main*/
+    float: left;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+.enbas
+{
+	display: flex; /*les figures en dessous du main sont côte à côte, centré sur par rapport au 100% de la page*/
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.enbas img
+{
+	width: 190px;
+    height: 140px;
+    border: 2px none;
+    border-radius: 8px;
+}
+
+.titresolo h2{
+    margin-left: 230px; /*titre des figures centré en dessous du main*/
+}
+
+figure .imga3, figure .imga6 /* modification de la tailles de 2 images par rapport aux 4 autres*/
+{
+   width: 200px;
+   height: 300px;
+}
+               
+figure .imga1 /*dispostion des figures les une en dessous de l'autre grâce à float toujours pour les images centré en dessous du main */
+{
+   float: left;
+}
+
+figure .imga2
+{
+	clear: both;
+}
+
+figure .imga4
+{
+   float: left;
+}
+
+figure .imga5
+{
+	clear: both;
+}
+
+.enbas figure
+{
+	text-align: center;
+	border: 2px none;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+footer{
+    background-color: #F2F2F2; /*j'ai séparé le footer en 3 parties, les 3 alignés */ 
+    display: flex;
+    margin-left: 38px;
+    margin-right: 20px;
+}
+
+.fgauche, .fcentre, .fdroite{
+    width: 33%;
+}
+
+.fa-child, .fa-heart, .fa-info{ /*modif couleur des icones*/
+    color: blue;
+}

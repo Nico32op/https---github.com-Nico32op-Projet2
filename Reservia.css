@@ -45,6 +45,7 @@ header{
     width: 40%;
     margin-right: 20px;
     flex-wrap: wrap;
+    background-color: black;
 }
 
 .menu-nav1 li{ /*personnalisation du menu nav gauche*/

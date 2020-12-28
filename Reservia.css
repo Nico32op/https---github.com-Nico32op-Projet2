@@ -15,7 +15,7 @@ input{
     background-color: white; /*modification barre de recherche*/
     padding: 8px;
     border: 2px solid #bbb;
-    border-radius: 8px;
+    border-radius: 9px;
 }
 
 button{

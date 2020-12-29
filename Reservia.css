@@ -15,15 +15,16 @@ input{
     background-color: white; /*modification barre de recherche*/
     padding: 8px;
     border: 2px solid #bbb;
-    border-radius: 8px;
+    border-right: none;
 }
 
 button{
     color: white; /*modif bouton de la barre de recherche*/
     background-color: blue;
     padding: 8px;
-    border: 2px solid #bbb;
+    border: 2px solid;
     border-radius: 8px;
+    border-left: none;
     font-family: 'Raleway';
     font-size: 15px;
 }
@@ -50,7 +51,7 @@ header{
 .menu-nav1 li{ /*personnalisation du menu nav gauche*/
     border: 2px solid #bbb;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 nav.menu-nav1 ul li 
@@ -123,14 +124,12 @@ main{
 }
 
 .left img{ /*taille des images avec la même bordure qu'auparavant*/
-    width: 180px;
+    width: 200px;
     height: 140px;
     border: 2px none;
     border-radius: 8px;
-}
-
-.left figure{ /*le texte des figures centré avec l'image*/
-    text-align: center;
+    margin: 4px;
+    display: block;
 }
 
 .image1
@@ -140,19 +139,17 @@ main{
     justify-content: space-around;
 }
 
-figcaption{ /*la description des figures à un fond blanc*/
-    background-color: white;
-}
-
 .right{
     width: 32%;
     background-color: #F2F2F2;
     border: 2px none;
     border-radius: 8px;
+    height: 600px;
 }
 
 .right h2{
-    margin-left: 60px;
+    margin-left: 40px;
+    margin-bottom: 0px;
 }
 
 .right img{
@@ -160,12 +157,19 @@ figcaption{ /*la description des figures à un fond blanc*/
     height: 140px;
     border: 2px none;
     border-radius: 8px;
+    display: block;
+    margin: 4px;
 }
 
 .image2 .imageflotante{ /*grace à la balise float on peut écrire à droite des images de la partie droite du main*/
     float: left;
     flex-wrap: wrap;
-    margin-left: 60px;
+    margin-right: 10px;
+}
+
+.image2{
+    display: flex;
+    flex-direction: column;
 }
 
 .enbas
@@ -233,6 +237,60 @@ footer{
     width: 33%;
 }
 
-.fa-child, .fa-heart, .fa-info{ /*modif couleur des icones*/
+.fa-child, .fa-heart, .fa-info, .fa-money-bill-wave{ /*modif couleur des icones*/
     color: blue;
+}
+
+.fa-star{
+    color: blue;
+    font-size: 12px;
+    text-align: right;
+}
+
+
+
+
+.card-body{
+    line-height: 2px;
+    margin-left: 12px;
+}
+
+.card{
+    background-color: white;
+    border: 2px none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-title{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+
+
+.card-body1{
+    line-height: 4px;
+}
+
+.card1{
+    border: 2px none;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 40px;
+    width: 80%;
+}
+
+.card-title1{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.card-text1{
+    font-size: 14px;
 }

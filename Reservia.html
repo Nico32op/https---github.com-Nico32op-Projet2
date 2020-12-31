@@ -13,21 +13,27 @@
 <header> <!--j'ai séparé le header en 2 partie pour séparer les 2 nav-->
  
 <div class="navleft"> <!--ici la partie gauche du header-->
-<h1>Reservia</h1>
+<img src="Reservia.png" class="titreprincipal" alt="Titre principal"/>
 <p>Trouver votre hébergement pour des vacanes de rêve <br>En plein centre ville ou en pleine campagne</p>
  
+<div class="bar-de-recherche">
 <i class="fas fa-map-marker-alt"></i> <label for="site-search"></label> <!--le code pour la création du bouton de recherche-->
 <input type="search" id="site-search" name="q"
        aria-label="Search through site content">
-<button>Rechercher</button>
+<button><a href="">Rechercher</a></button> 
+</div>
 
-<nav class="menu-nav1"> 
+<nav class="menu-nav1">
 <ul>
+<li class="btnoff"><p>Filtres</p> <!--rendre le bouton filtre inutilisable-->
+</li>
 <li class="btn1"><a href=""><i class="fas fa-money-bill-wave"></i> Economique</a>
 </li>
 <li class="btn1"><a href=""><i class="fa fa-child"></i> Famillial</a>
 </li>
 <li class="btn1"><a href=""><i class="fa fa-heart"></i> Romantique</a>
+</li>
+<li class="btn1"><a href=""><i class="fa fas fa-dog"></i> Animaux autorisés</a>
 </li>
 </ul>
 </nav>
@@ -101,36 +107,38 @@
         <p class="card-text">Nuit à partir de 23€</p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
       </div>
     </div>
-</div>
+
+   </div>
+   <p class="textesousimg">Afficher plus</p>
 </div>
 
 <div class="right">
-<h2>Les plus populaires</h2> <!--la partie droite des images classiques pour pouvoir centrer un texte à coté de l'image-->
+<h2>Les plus populaires<i class="fa fa-line-chart" aria-hidden="true"></i></h2> <!--la partie droite des images classiques pour pouvoir centrer un texte à coté de l'image-->
 <div class="image2">
 <div class="card1">
 <img src="7.jpg" class="imageflotante" alt="Hebergement"/>
 <div class="card-body1">
 <p class="card-title1"><a href="">Hôtel de la mer</a></p>
-<p class="card-text1">Nuit à partir de 46€</p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+<p class="card-text1">Nuit à partir de 46€</p><div class="icon1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
 </div>
 </div>
 
 <div class="card1">
-   <img src="8.jpg" class="imageflotante" alt="Hebergement"/>
+<img src="8.jpg" class="imageflotante" alt="Hebergement"/>
    <div class="card-body1">
    <p class="card-title1"><a href="">Au coeur de l'eau</a></p>
    <p class="card-title1"><a href="">Chambres d'hôtes</a></p>
-   <p class="card-text1">Nuit à partir de 71€</p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-   </div>
+   <p class="card-text1">Nuit à partir de 71€</p><div class="icon2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+</div>
    </div>
 
 <div class="card1">
-      <img src="9.jpg" class="imageflotante" alt="Hebergement"/>
+<img src="9.jpg" class="imageflotante" alt="Hebergement"/>
       <div class="card-body1">
       <p class="card-title1"><a href="">Hôtel Le soleil du</a></p>
       <p class="card-title1"><a href="">matin</a></p>
-      <p class="card-text1">Nuit à partir de 128€</p></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-      </div>
+      <p class="card-text1">Nuit à partir de 128€</p><div class="icon2"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>   
+   </div>
       </div>
 
 </div>

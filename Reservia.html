@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="Reservia.css"/> <!--la ligne qui relie mon html au css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/> <!--la ligne qui me permet d'avoir les icones-->
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'> <!--la ligne qui me permet de charger la nouvelle police-->
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Reservia</title>
    </head>
 <body>
@@ -13,8 +13,8 @@
 <header> <!--j'ai séparé le header en 2 partie pour séparer les 2 nav-->
  
 <div class="navleft"> <!--ici la partie gauche du header-->
-<img src="Reservia.png" class="titreprincipal" alt="Titre principal"/>
-<p>Trouver votre hébergement pour des vacanes de rêve <br>En plein centre ville ou en pleine campagne</p>
+  <img src="Reservia.png" class="titreprincipal" alt="Titre principal">
+     <p class="texterech"><span>Trouver votre hébergement pour des vacanes de rêve</span> <br><br>En plein centre ville ou en pleine campagne</p>
  
 <div class="bar-de-recherche">
 <i class="fas fa-map-marker-alt"></i> <label for="site-search"></label> <!--le code pour la création du bouton de recherche-->
@@ -24,18 +24,18 @@
 </div>
 
 <nav class="menu-nav1">
-<ul>
-<li class="btnoff"><p>Filtres</p> <!--rendre le bouton filtre inutilisable-->
-</li>
-<li class="btn1"><a href=""><i class="fas fa-money-bill-wave"></i> Economique</a>
-</li>
-<li class="btn1"><a href=""><i class="fa fa-child"></i> Famillial</a>
-</li>
-<li class="btn1"><a href=""><i class="fa fa-heart"></i> Romantique</a>
-</li>
-<li class="btn1"><a href=""><i class="fa fas fa-dog"></i> Animaux autorisés</a>
-</li>
-</ul>
+ <ul>
+    <li class="btnoff"><p>Filtres</p> <!--rendre le bouton filtre inutilisable-->
+    </li>
+    <li class="btn1"><a href=""><i class="fas fa-money-bill-wave"></i> Economique</a>
+    </li>
+    <li class="btn2"><a href=""><i class="fa fa-child"></i> Famillial</a>
+    </li>
+    <li class="btn0"><a href=""><i class="fa fa-heart"></i> Romantique</a>
+    </li>
+    <li class="btn0"><a href=""><i class="fa fas fa-dog"></i> Animaux autorisés</a>
+    </li>
+  </ul>
 </nav>
 
 <p><i class="fa fa-info"></i> Plus de 500 logements disponible dans cette ville</p>
@@ -44,11 +44,11 @@
  <div class="navright"> <!--/*ici la partie droite du header*/ -->
     <nav class="menu-nav">
        <ul>
-       <li class="btn"><a href="#Hébergement Marseille">Hébergements</a> <!--création d'une ancre-->
+       <li class="btn3"><a href="#Hébergement Marseille">Hébergements</a> <!--création d'une ancre-->
        </li>
-       <li class="btn"><a href="#Activités à Marseille">Activités</a>
+       <li class="btn4"><a href="#Activités à Marseille">Activités</a>
        </li>
-       <li class="btn"><a href="">S'inscrire</a>
+       <li class="btn5"><a href="">S'inscrire</a>
        </li>
        </ul>
        </nav>
@@ -113,10 +113,10 @@
 </div>
 
 <div class="right">
-<h2>Les plus populaires<i class="fa fa-line-chart" aria-hidden="true"></i></h2> <!--la partie droite des images classiques pour pouvoir centrer un texte à coté de l'image-->
-<div class="image2">
-<div class="card1">
-<img src="7.jpg" class="imageflotante" alt="Hebergement"/>
+  <h2>Les plus populaires<i class="fa fa-line-chart" aria-hidden="true"></i></h2> <!--la partie droite des images classiques pour pouvoir centrer un texte à coté de l'image-->
+  <div class="image2">
+       <div class="card1">
+            <img src="7.jpg" class="imageflotante" alt="Hebergement"/>
 <div class="card-body1">
 <p class="card-title1"><a href="">Hôtel de la mer</a></p>
 <p class="card-text1">Nuit à partir de 46€</p><div class="icon1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>

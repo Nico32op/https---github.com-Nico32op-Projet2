@@ -5,13 +5,6 @@ html{
     font-weight: 400; /*j'ai appliqué la même police à tous le site*/
 }
 
-h1{
-    color: slateblue; /*la couleur du titre principale*/
-    font-family: 'Raleway';
-    
-    font-weight: 500;
-}
-
 body{
     flex-wrap: wrap; 
 }
@@ -29,7 +22,7 @@ body{
 }
 
 input{
-    background-color: white; /*modification barre de recherche*/
+ /*modification barre de recherche*/
     padding: none;
     border: none;
     outline-style: none;
@@ -60,6 +53,15 @@ button{
     padding: 8px;
 }
 
+.fa-info{ /*modif icone info*/
+    color: blue;
+    font-size: 12px;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 6px;
+    margin-right: 5px;
+}
+
 header{
     display: flex; /*les éléments dans du header s'alignent côte à côte*/
 }
@@ -84,7 +86,7 @@ header{
     flex-wrap: wrap;
 }
 
-.menu-nav1 .btn1{ /*personnalisation des bordures des nav gauche*/
+.menu-nav1 .btn1, .btn2, .btn0{ /*personnalisation des bordures des nav gauche*/
     border: 2px solid #bbb;
     padding: 0px;
     border-radius: 15px;
@@ -123,7 +125,7 @@ nav.menu-nav1 a { /*les textes des catégories nav sont écries en noir, il n'y 
   font-weight: bolder;
 }
 
-nav.menu-nav1 li.btn1:hover a { /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
+nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a{ /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
   color: blue;
   background-color: none;
 }
@@ -133,7 +135,7 @@ nav.menu-nav1 li.btn1:hover a { /*quand on passe sur le bouton nav le texte devi
   text-align: left;
 }
 
-nav.menu-nav ul li 
+nav.menu-nav ul li /*alignement des nav en haut à droite*/
 {
   display: inline-block;
   list-style-type: none;
@@ -147,8 +149,12 @@ nav.menu-nav a { /*le texte des catégories du mena nav en haut à droite sont �
   font-size: 15px;
 }
 
-nav.menu-nav li.btn:hover a { /*quand on passe sur le texte avec la souris il devient bleu*/
+nav.menu-nav li.btn3:hover a, li.btn4:hover a, li.btn5:hover a { /*quand on passe sur le texte avec la souris il devient bleu*/
   color: blue;
+}
+
+.menu-nav .btn3:hover a, .btn4:hover a{ /*création d'une bordure lorsqu'on passe sur les nav en à droite*/
+    border-top: 1px solid;
 }
 
 .menu-nav
@@ -312,13 +318,15 @@ main{
 }
 
 .titresolo h2{
-    margin-left: 38px; /*titre des figures centré en dessous du main*/
+    margin-left: 38px;
+    margin-bottom: 0px; /*titre des figures centré en dessous du main*/
 }
 
 figure .imga3, figure .imga6 /* modification de la tailles de 2 images par rapport aux 4 autres*/
 {
    width: 295px;
    height: 340px;
+   color: red;
 }
                
 figure .imga1 /*dispostion des figures les une en dessous de l'autre grâce à float toujours pour les images centré en dessous du main */
@@ -363,15 +371,103 @@ footer{
 }
 
 
+@media(max-width: 767px) /*adapté site au format smartphone*/
 
-.fa-info{ /*la mise en place des icones de la partie gauche du header*/
-    color: blue;
-    font-size: 12px;
-    border: 2px solid #F2F2F2;
-    border-radius: 20px;
-    padding: 6px;
-    margin-right: 5px;
+{ 
+body
+{
+width :100% ;
+padding :0px ;
 }
+
+ header
+{
+ width: 100%;
+}
+
+.left
+
+{
+width :100% ;
+background-color: white;
+}
+
+.right
+
+{
+width :100% ;
+}
+
+main{ /*modification d'ordre de la partie gauche et droite du main*/
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.btn5{
+    position: absolute; /*position du nav s'inscire*/
+    top: 20px;
+    right: 20px;
+}
+
+.btn3{ /*position nav hébergements*/
+    position: absolute;
+    top: 70px;
+    right: 235px;
+}
+
+.btn4{ /*position nav activité*/
+    position: absolute;
+    top: 70px;
+    right: 90px;
+    margin-bottom: 500px;
+}
+
+
+.texterech{ /*modif texte au dessus bare de recherche*/
+    margin-top: 50px;
+    width: 130%;
+}
+
+span{ /*partie en gras de la partie au dessus de la bare de recherche*/
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.navright{
+    width: 0%;
+}
+
+.menu-nav1 p{
+    margin-right: 100px;
+    margin-bottom: 2px;
+}
+
+.menu-nav1{ /*augmentation de la largeur de la partie gauche des nav*/
+    width: 130%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fgauche, .fcentre, .fdroite{
+    width: 100%;
+}
+
+.fcentre, .fdroite{
+    margin-left: 20px;
+}
+
+}
+
+
+
+
+
+
+
 
 
 

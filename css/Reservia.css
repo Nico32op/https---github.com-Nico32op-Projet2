@@ -393,9 +393,128 @@ footer{
     margin-left: 20px;
 }
 
+@media(min-width: 800px) and (max-width: 1280px) /*adapté site au format tablette*/
 
+{
 
+    body
+    {
+    width :100% ;
+    padding :0px ;
+    }
+    
+     header
+    {
+     width: 100%;
+     display: flex;
+    }
 
+    .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
+        background-color: white;
+        width: 45%;
+    }
+
+    .navleft{
+        width: 1500px;
+    }
+
+    .navright{
+        background-color: violet;
+        width: 0%;
+    }
+
+    .btn3{ /*position nav hébergements*/
+        position: absolute;
+        top: 20px;
+        right: 200px;
+    }
+    
+    .btn4{ /*position nav activité*/
+        position: absolute;
+        top: 20px;
+        right: 110px;
+    }
+
+    .btn5{ /*position nav s'inscrire*/
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .navright .menu-nav .btn5 a{ /*changement couleur bouton s'inscrire*/
+        color: blue;
+        font-weight: bolder;
+    }
+
+    main{
+        display: flex;
+    }
+    
+    
+    .left
+    {
+    width :60%;
+    background-color: #F2F2F2;
+    }
+
+    .left h2{
+        margin-left: 95px;
+    }
+    
+    .right
+    
+    {
+    width :40%;
+    height: 750px;
+    background-color: white;
+    }
+
+    .right img{
+        width: 220px;
+        margin-bottom: 13px;
+    }
+
+    .image2 .imageflotante{ /*grace à la balise float on peut écrire à droite des images de la partie droite du main*/
+        clear: both;
+        margin-right: 0px;
+    }
+
+    .card-body1{ /*les div card concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
+        line-height: 2px;
+        margin-left: 12px;
+    }
+
+    .card1{
+        width: 230px;
+        background-color: white;
+        border: 2px solid none;
+        border-radius: 8px;
+        box-shadow: 1px 1px 2px #555;
+    }
+
+    .right h2{
+        margin-left: 35px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+    .icon1, .icon2{ /*mise en page des icones des etoiles des lieux les plus populaires */
+        color:blue;
+        font-size: 12px;
+        margin-top: 1px;
+    }
+
+    .right .fa-chart-line{ /*modif position icon du titre "les plus populaires"*/
+        position: absolute;
+        right: 23px;
+        top: 352px;
+    }
+
+    .titresolo h2{
+        margin-left: 90px;
+    }
+
+}
 
 @media(max-width: 767px) /*adapté site au format smartphone*/
 
@@ -439,10 +558,8 @@ main{ /*modification d'ordre de la partie gauche et droite du main*/
     padding-right: 30px;
 }
 
-.menu-nav .btn3 a{ /*bordure en bas de hébergement*/
+.menu-nav .btn3 a, .btn4 a{ /*bordure en bas de hébergement*/
     border-bottom: 2px solid gray;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .btn5{
@@ -551,6 +668,8 @@ footer{
     width: 150%;
 }
 }
+
+
 
 
 

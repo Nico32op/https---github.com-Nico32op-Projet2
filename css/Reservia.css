@@ -520,6 +520,10 @@ footer{
 @media(max-width: 767px) /*adapté site au format smartphone*/
 
 { 
+.card1{
+    width: 330px;
+}
+
 body
 {
 width :100% ;

@@ -1,6 +1,6 @@
 
 html{
-    font-family: 'Raleway';
+    font-family: 'Raleway', serif;
     font-style: normal;
     font-weight: 400; /*j'ai appliqué la même police à tous le site*/
 }
@@ -310,6 +310,14 @@ main{
     margin-top: 85px;
 }
 
+.ki{ /*les images supperposé de la partie Activité à Marseille*/
+    height: 20%;
+}
+
+.ko{
+    height: 20%;
+}
+
 .enbas
 {
 	display: flex; /*les figures en dessous du main sont côte à côte, centré sur par rapport au 100% de la page*/
@@ -351,27 +359,6 @@ figure .imga3, figure .imga6 /* modification de la tailles de 2 images par rappo
     height: 370px;
 }
 
-               
-figure .imga1 /*dispostion des figures les une en dessous de l'autre grâce à float toujours pour les images centré en dessous du main */
-{
-   float: left;
-}
-
-figure .imga2
-{
-	clear: both;
-}
-
-figure .imga4
-{
-   float: left;
-}
-
-figure .imga5
-{
-	clear: both;
-}
-
 .enbas figure
 {
 	text-align: center;
@@ -394,18 +381,17 @@ footer{
     margin-left: 20px;
 }
 
-@media(min-width: 800px) and (max-width: 1024px) /*adapté site au format tablette*/
+
+@media(min-width: 800px) and (max-width: 1280px) /*adapté site au format tablette*/
 
 {
 
-    body
-    {
+    body{
     width :100% ;
     padding :0px ;
     }
     
-     header
-    {
+     header{
      width: 100%;
      display: flex;
     }
@@ -452,8 +438,7 @@ footer{
     }
     
     
-    .left
-    {
+    .left{
     width :60%;
     background-color: #F2F2F2;
     }
@@ -462,9 +447,7 @@ footer{
         margin-left: 95px;
     }
     
-    .right
-    
-    {
+    .right{
     width :40%;
     height: 750px;
     background-color: white;
@@ -514,7 +497,6 @@ footer{
     .titresolo h2{
         margin-left: 90px;
     }
-
 }
 
 @media(max-width: 767px) /*adapté site au format smartphone*/

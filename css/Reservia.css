@@ -214,7 +214,7 @@ main{
     width: 220px;
     height: 140px;
     border: 2px none;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
     margin: 4px;
     display: block;
 }
@@ -281,8 +281,7 @@ main{
     width: 180px;
     height: 140px;
     border: 2px none;
-    border-radius: 8px;
-    border-right: 5px solid white;
+    border-radius: 8px 0px 0px 8px;
     display: block;
     margin: 4px;
 }
@@ -331,7 +330,7 @@ main{
 	width: 295px;
     height: 154px;
     border: 2px none;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
 }
 
 .titresolo h2{
@@ -444,7 +443,7 @@ footer{
     }
 
     .left h2{
-        margin-left: 95px;
+        margin-left: 35px;
     }
     
     .right{
@@ -495,9 +494,29 @@ footer{
     }
 
     .titresolo h2{
-        margin-left: 90px;
+        margin-left: 173px;
     }
-}
+
+    .enbas{
+        display: flex;
+    }
+    .enbas img{
+	width: 315px;
+    height: 154px;
+    border: 2px none;
+    border-radius: 8px;
+    }
+    
+    .enbas .fig3, .fig6{ /*délimitation de la hauteur des figures cités*/
+    height: 180px;
+    }
+
+    .enbas .fig5{
+        position: absolute;
+        left: 508px;
+        top: 1370px;
+    }
+    }
 
 @media(max-width: 767px) /*adapté site au format smartphone*/
 
@@ -595,6 +614,10 @@ span{ /*partie en gras de la partie au dessus de la bare de recherche*/
 
 .menu-nav1{ /*augmentation de la largeur de la partie gauche des nav*/
     width: 130%;
+}
+
+.right h2 i{ /*place de l'icone du titre "les plus populaires" */
+    margin-left: 50px;
 }
 
 .left img{ /*taille des images avec la même bordure qu'auparavant*/

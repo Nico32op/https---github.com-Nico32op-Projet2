@@ -57,6 +57,10 @@ button{
     outline-style: none;
 }
 
+.search{
+    visibility: hidden;
+}
+
 .fa-map-marker-alt{ /* modif icone placé avant la barre de recherche */
     color: black;
     font-size: 20px;
@@ -409,7 +413,11 @@ footer{
 
     .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
         background-color: white;
-        width: 45%;
+        width: 35%;
+    }
+
+    .search{
+        display: none;
     }
 
     .navleft{
@@ -550,7 +558,35 @@ padding :0px ;
 
 .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
     background-color: white;
-    width: 140%;
+    width: 110%;
+    height: 7%;
+    margin-left: 20px;
+}
+
+button{
+    color: white; /*modif bouton de la barre de recherche*/
+    background-color: blue;
+    padding: none;
+    font-family: 'Raleway';
+    font-size: 15px;
+    border-radius: 15px;
+    border-right: 0px solid;
+    border-left: 15px solid;
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+    text-decoration: none;
+    width: 100%;
+    outline-style: none;
+    display: none; /*annulation "Rechercher" partie mobile du site */ 
+}
+
+.search{ /*appariton du logo recherche dans la bare de recherche*/
+    visibility: visible;
+    color:white;
+    padding: 9px;
+    background-color: blue;
+    border-radius: 12px;
+    font-size: 15px;
 }
 
 .left

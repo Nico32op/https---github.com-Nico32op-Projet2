@@ -36,7 +36,7 @@ body{
 
 input{
  /*modification barre de recherche*/
-    padding: none;
+    padding: 0px;
     border: none;
     outline-style: none;
 }
@@ -44,20 +44,18 @@ input{
 button{
     color: white; /*modif bouton de la barre de recherche*/
     background-color: blue;
-    padding: none;
+    padding-right: 18px;
+    padding-left: 10px;
     font-family: 'Raleway';
     font-size: 15px;
-    border-radius: 15px;
-    border-right: 0px solid;
-    border-left: 15px solid;
-    border-top: 0px solid;
-    border-bottom: 0px solid;
+    border-radius: 0px 15px 15px 0px;
+    border: 0px solid;
     text-decoration: none;
     width: 100%;
     outline-style: none;
 }
 
-.search{
+.search{ /*logo recherche invisible*/
     visibility: hidden;
 }
 
@@ -140,7 +138,6 @@ nav.menu-nav1 ul{
 nav.menu-nav1 a { /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
   color: black;
   text-decoration: none;
-  background-color: none;
   margin-right: 12px;
   font-size: 15px;
   font-weight: bolder;
@@ -148,7 +145,6 @@ nav.menu-nav1 a { /*les textes des catégories nav sont écries en noir, il n'y 
 
 nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a{ /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
   color: blue;
-  background-color: none;
 }
 
 .menu-nav1 
@@ -165,7 +161,6 @@ nav.menu-nav ul li /*alignement des nav en haut à droite*/
 nav.menu-nav a { /*le texte des catégories du mena nav en haut à droite sont écris en gris*/
   color: grey;
   text-decoration: none;
-  background-color: none;
   padding: 10px;
   font-size: 15px;
 }
@@ -349,7 +344,7 @@ main{
     border-radius: 8px 8px 0px 0px;
 }
 
-.titresolo h2{
+.titresolo{
     margin-left: 38px;
     margin-bottom: 0px; /*titre des figures centré en dessous du main*/
 }
@@ -397,7 +392,7 @@ footer{
 }
 
 
-@media(min-width: 800px) and (max-width: 1280px) /*adapté site au format tablette*/
+@media(min-width: 500px) and (max-width: 1280px) /*adapté site au format tablette*/
 
 {
 
@@ -513,8 +508,8 @@ footer{
         top: 352px;
     }
 
-    .titresolo h2{
-        margin-left: 173px;
+    .titresolo{
+        margin-left: 182px;
     }
 
     .enbas{
@@ -533,12 +528,12 @@ footer{
 
     .enbas .fig5{
         position: absolute;
-        left: 162px;
+        left: 170px;
         top: 1370px;
     }
     }
 
-@media(max-width: 767px) /*adapté site au format smartphone*/
+@media all and (max-device-width: 480px) /*adapté site au format smartphone*/
 
 { 
 .card1{
@@ -557,26 +552,13 @@ padding :0px ;
 }
 
 .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
-    background-color: white;
     width: 110%;
     height: 7%;
     margin-left: 20px;
+    border-radius: 15px;
 }
 
 button{
-    color: white; /*modif bouton de la barre de recherche*/
-    background-color: blue;
-    padding: none;
-    font-family: 'Raleway';
-    font-size: 15px;
-    border-radius: 15px;
-    border-right: 0px solid;
-    border-left: 15px solid;
-    border-top: 0px solid;
-    border-bottom: 0px solid;
-    text-decoration: none;
-    width: 100%;
-    outline-style: none;
     display: none; /*annulation "Rechercher" partie mobile du site */ 
 }
 
@@ -688,7 +670,7 @@ span{ /*partie en gras de la partie au dessus de la bare de recherche*/
 }
 
 .titresolo{ /*placement titre "activités à marseille*/
-    margin-left: 15px;
+    margin-left: 35px;
 }
 
 .enbas img

@@ -26,18 +26,18 @@
           <br /><br />En plein centre ville ou en pleine campagne
         </p>
 
+        <form method="post" action="traitement.php">
         <div class="bar-de-recherche">
           <i class="fas fa-map-marker-alt"></i>
-          <label for="site-search"></label>
           <!--le code pour la création du bouton de recherche-->
           <input
             type="search"
-            id="site-search"
-            name="q"
-            aria-label="Search through site content"
+            id="search"
+            name="search"
           />
          <button>Rechercher</button><span class="search"><i class="fas fa-search"></i></span>
         </div>
+        </form>
 
         <nav class="menu-nav1">
           <ul>
@@ -197,9 +197,7 @@
       </div>
     </main>
 
-    <div class="titresolo">
-      <h2 id="Activités-à-Marseille">Activités à Marseille</h2>
-    </div>
+      <h2 class="titresolo" id="Activités-à-Marseille">Activités à Marseille</h2>
     <!-- en dessous du main j'ai centré les figures et utilisé float pour les disposer -->
     <div class="enbas">
         

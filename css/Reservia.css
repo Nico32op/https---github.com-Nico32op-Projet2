@@ -46,6 +46,7 @@ button{
     background-color: blue;
     padding-right: 18px;
     padding-left: 10px;
+    margin-left: 14px;
     font-family: 'Raleway';
     font-size: 15px;
     border-radius: 0px 15px 15px 0px;
@@ -63,8 +64,8 @@ button{
     color: black;
     font-size: 20px;
     background-color: #F2F2F2;
-    border-radius: 15px;
-    border-right: 15px solid white;
+    border-radius: 15px 0px 0px 15px;
+    
     padding: 8px;
 }
 
@@ -352,7 +353,7 @@ main{
 figure .imga3, figure .imga6 /* modification de la tailles de 2 images par rapport aux 4 autres*/
 {
    width: 295px;
-   height: 340px;
+   height: 350px;
 }
 
 .enbas .fig3, .fig6, .fig2, .fig1, .fig4, .fig5{ /*création des bordures autour des figures*/
@@ -371,7 +372,8 @@ figure .imga3, figure .imga6 /* modification de la tailles de 2 images par rappo
 
 .enbas figure
 {
-	text-align: center;
+    text-align: center;
+    font-weight: bolder;
 	border: 2px none;
     border-radius: 8px;
     margin: 15px;
@@ -552,7 +554,7 @@ padding :0px ;
 }
 
 .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
-    width: 110%;
+    width: 103%;
     height: 7%;
     margin-left: 20px;
     border-radius: 15px;
@@ -587,15 +589,28 @@ main{ /*modification d'ordre de la partie gauche et droite du main*/
     flex-direction: column-reverse;
 }
 
-.menu-nav .btn3:hover a, .btn4:hover a{ /*création d'une bordure lorsqu'on passe sur les nav "Hégergement et activités*/
+.menu-nav .btn3:hover a{ /*création d'une bordure lorsqu'on passe sur la nav "Hégergement*/
     border-bottom: 2px solid blue;
     border-top: 0px solid;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-bottom: 15px;
 }
 
-.menu-nav .btn3 a, .btn4 a{ /*bordure en bas de hébergement*/
+.menu-nav .btn4:hover a{ /*création d'une bordure lorsqu'on passe sur la nav "activités*/
+    border-bottom: 2px solid blue;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn3 a{ /*bordure en bas de hébergement*/
     border-bottom: 2px solid gray;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn4 a{ /*bordure en bas de activités*/
+    border-bottom: 2px solid gray;
+    border-top: 0px solid;
+    padding-bottom: 15px;
 }
 
 .btn5{

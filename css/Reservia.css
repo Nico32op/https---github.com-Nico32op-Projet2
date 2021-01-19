@@ -465,7 +465,7 @@ footer{
     }
 
     .left h2{
-        margin-left: 35px;
+        margin-left: 95px;
     }
     
     .right{
@@ -511,12 +511,12 @@ footer{
 
     .right .fa-chart-line{ /*modif position icon du titre "les plus populaires"*/
         position: absolute;
-        right: 23px;
-        top: 352px;
+        right: 18px;
+        top: 345px;
     }
 
     .titresolo{
-        margin-left: 182px;
+        margin-left: 60px;
     }
 
     .enbas{

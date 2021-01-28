@@ -24,7 +24,7 @@ body{
     display: flex;
     border: 1px solid grey;
     border-radius: 15px;
-    width: 42%;
+    width: 330px;
     background-color: white;
 }
 
@@ -408,7 +408,7 @@ footer{
 
     .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
         background-color: white;
-        width: 35%;
+        width: 340px;
     }
 
     .search{
@@ -559,7 +559,7 @@ padding :0px ;
 }
 
 .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
-    width: 103%;
+    width: 240px;
     height: 7%;
     margin-left: 20px;
     border-radius: 15px;

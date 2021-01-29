@@ -18,6 +18,7 @@
 
 body{
     flex-wrap: wrap; 
+    width: 100%;
 }
 
 .bar-de-recherche{ /*class comprenant la barre de recherche entière*/
@@ -392,7 +393,7 @@ footer{
 }
 
 
-@media(min-width: 768px) and (max-width: 1280px) /*adapté site au format tablette*/
+@media(min-width: 768px) and (max-width: 1300px) /*adapté site au format tablette*/
 
 {
 
@@ -516,28 +517,25 @@ footer{
     }
 
     .titresolo{
-        margin-left: 60px;
+        text-align: center;
     }
 
-    .enbas{
-        display: flex;
-    }
+ .enbas{
+     width: 40%;
+     margin: auto;
+ }
+
     .enbas img{
-	width: 315px;
-    height: 154px;
+	width: 400px;
+    height: 250px;
     border: 2px none;
     border-radius: 8px;
     }
     
     .enbas .fig3, .fig6{ /*délimitation de la hauteur des figures cités*/
-    height: 180px;
+    height: 270px;
     }
 
-    .enbas .fig5{
-        position: absolute;
-        left: 47px;
-        top: 1365px;
-    }
     }
 
 @media(max-width: 767px) /*adapté site au format smartphone*/
@@ -549,13 +547,14 @@ footer{
 
 body
 {
-width :100% ;
-padding :0px ;
+width :100%;
+padding :0px;
 }
 
  header
 {
  width: 100%;
+ margin: auto;
 }
 
 .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
@@ -581,12 +580,14 @@ button{
 .left
 {
 width :100% ;
+margin: auto;
 background-color: white;
 }
 
 .right
 {
 width :100% ;
+margin: auto;
 }
 
 main{ /*modification d'ordre de la partie gauche et droite du main*/
@@ -655,6 +656,15 @@ span{ /*partie en gras de la partie au dessus de la bare de recherche*/
 
 .navright{
     width: 0%;
+}
+
+.menu-nav1 ul{ /*modif position des nav hergements...*/
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-nav1 ul li{ /*modif taille contenant les nav*/
+    width: 190px;
 }
 
 .menu-nav1 p{

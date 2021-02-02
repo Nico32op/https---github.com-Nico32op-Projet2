@@ -219,7 +219,7 @@ main{
 }
 
 .left h2{
-    margin-left: 26px;
+    text-align: center;
 }
 
 .left img{ /*taille des images avec la même bordure qu'auparavant*/
@@ -347,6 +347,7 @@ main{
 .titresolo{
     margin-left: 38px;
     margin-bottom: 0px; /*titre des figures centré en dessous du main*/
+    text-align: center;
 }
 
 figure .imga3, figure .imga6 /* modification de la tailles de 2 images par rapport aux 4 autres*/
@@ -466,12 +467,12 @@ footer{
     }
 
     .left h2{
-        margin-left: 95px;
+        text-align: center;
     }
     
     .right{
     width :290px;
-    height: 750px;
+    height: 850px;
     }
 
     .pop{ /*span icone populaire*/
@@ -524,6 +525,7 @@ footer{
 
     .titresolo{
         text-align: center;
+        width: 90%;
     }
 
  .enbas{
@@ -585,9 +587,8 @@ button{
 
 .left
 {
-width :100% ;
+width :100%;
 margin: auto;
-background-color: white;
 }
 
 .right
@@ -713,13 +714,16 @@ span{ /*partie en gras de la partie au dessus de la bare de recherche*/
 }
 
 .left h2{ /*placement titre hébergement à marseille*/
-    margin-left: 50px;
+    text-align: center;
 }
 
 .titresolo{ /*placement titre "activités à marseille*/
-    margin-left: 35px;
+    text-align: center;
+    width: 85%;
 }
-
+.enbas{
+    width: 100%;
+}
 .enbas img
 {
 	width: 315px;

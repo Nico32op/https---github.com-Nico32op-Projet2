@@ -393,7 +393,7 @@ footer{
 }
 
 
-@media(min-width: 768px) and (max-width: 1300px) /*adapté site au format tablette*/
+@media(min-width: 768px) and (max-width: 1280px) /*adapté site au format tablette*/
 
 {
 
@@ -470,12 +470,17 @@ footer{
     }
     
     .right{
-    width :40%;
+    width :290px;
     height: 750px;
-    background-color: white;
     }
 
-    .right img{
+    .pop{ /*span icone populaire*/
+        position: absolute;
+        top: 10px;
+        right: 35px;
+    }
+
+  .right img{
         width: 220px;
         margin-bottom: 13px;
     }
@@ -499,9 +504,10 @@ footer{
     }
 
     .right h2{
-        margin-left: 35px;
+        margin-left: 65px;
         margin-bottom: 0px;
         margin-top: 16px;
+        width: 180px;
     }
 
     .icon1, .icon2{ /*mise en page des icones des etoiles des lieux les plus populaires */
@@ -558,7 +564,7 @@ padding :0px;
 }
 
 .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
-    width: 240px;
+    width: 243px;
     height: 7%;
     margin-left: 20px;
     border-radius: 15px;
@@ -571,7 +577,7 @@ button{
 .search{ /*appariton du logo recherche dans la bare de recherche*/
     visibility: visible;
     color:white;
-    padding: 9px;
+    padding: 10px;
     background-color: blue;
     border-radius: 12px;
     font-size: 15px;
@@ -619,30 +625,41 @@ main{ /*modification d'ordre de la partie gauche et droite du main*/
     padding-bottom: 15px;
 }
 
-.btn5{
-    position: absolute; /*position du nav s'inscire*/
-    top: 20px;
-    right: 20px;
-}
-
 .navright .menu-nav .btn5 a{ /*changement couleur bouton s'inscrire*/
     color: blue;
     font-weight: bolder;
 }
 
-.btn3{ /*position nav hébergements*/
+.menu-nav{
+    width: 100%;
+    display: flex;
     position: absolute;
-    top: 70px;
-    right: 215px;
+    top: 30px;
+    right: 15px;
 }
 
-.btn4{ /*position nav activité*/
-    position: absolute;
-    top: 70px;
-    right: 60px;
-    margin-bottom: 500px;
+.menu-nav ul{
+    display: flex;
+    width: 100%;
 }
 
+.btn5{
+    position: absolute;
+    bottom: 80px;
+    right: 2px;
+}
+
+.btn3{
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.btn4{
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+}
 
 .texterech{ /*modif texte au dessus bare de recherche*/
     margin-top: 50px;

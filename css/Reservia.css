@@ -1,0 +1,1031 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/raleway-v18-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/raleway-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/raleway-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/raleway-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/raleway-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/raleway-v18-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+
+  html{
+    font-family: 'Raleway', serif;
+    font-style: normal;
+    font-weight: 400; /*j'ai appliqué la même police à tous le site*/
+}
+
+body{
+    flex-wrap: wrap; 
+    width: 100%;
+}
+
+.bar-de-recherche{ /*class comprenant la barre de recherche entière*/
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 330px;
+    background-color: white;
+}
+
+.bar-de-recherche a{
+    text-decoration: none;
+    color: white;
+}
+
+input{
+ /*modification barre de recherche*/
+    padding: 0px;
+    border: none;
+    outline-style: none;
+}
+
+button{
+    color: white; /*modif bouton de la barre de recherche*/
+    background-color: blue;
+    padding-right: 18px;
+    padding-left: 10px;
+    margin-left: 14px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    border-radius: 0px 15px 15px 0px;
+    border: 0px solid;
+    text-decoration: none;
+    width: 100%;
+    outline-style: none;
+}
+
+.search{ /*logo recherche invisible*/
+    visibility: hidden;
+}
+
+.fa-map-marker-alt{ /* modif icone placé avant la barre de recherche */
+    color: black;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    
+    padding: 8px;
+}
+
+.fa-info{ /*modif icone info*/
+    color: blue;
+    font-size: 12px;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 6px;
+    margin-right: 5px;
+}
+
+header{
+    display: flex; /*les éléments dans du header s'alignent côte à côte*/
+}
+
+.titreprincipal{
+    width: 100px;
+    height: 50px;
+}
+
+span{
+    font-weight: bolder; /*modification du texte en dessous du logo titre*/
+}
+
+.navleft{
+    background-color: white; /*la partie gauche du header prend 60% de la page et j'ai ajouté une marge à gauche*/
+    width: 60%;
+    margin-left: 38px;
+    flex-wrap: wrap;
+}
+
+.navright
+{
+    background-color: white; /*la partie droite du header prend 40% de la page et j'ai ajouté une marge à droite*/
+    width: 40%;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-nav1 .btn1, .btn2, .btn0{ /*personnalisation des bordures des nav gauche*/
+    border: 2px solid #bbb;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.menu-nav1 .btnoff{ /*texte en gras pour la nav isolé des autres à gauches*/
+    font-weight: bolder;
+}
+
+.menu-nav1 i { /*la mise en place des icones de la partie gauche du header*/
+    color: blue;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    border: 2px none;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+nav.menu-nav1 ul li 
+{
+  display: inline-block; /*les catégories de la nav sont alignés et j'ai supprimé la puce*/
+  list-style-type: none;
+  margin: 8px;
+}
+
+nav.menu-nav1 ul{
+    padding-left: 0px;
+}
+
+nav.menu-nav1 a { /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
+  color: black;
+  text-decoration: none;
+  margin-right: 12px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a{ /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
+  color: blue;
+}
+
+.menu-nav1 
+{
+  text-align: left;
+}
+
+nav.menu-nav ul li /*alignement des nav en haut à droite*/
+{
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav.menu-nav a { /*le texte des catégories du mena nav en haut à droite sont écris en gris*/
+  color: grey;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 15px;
+}
+
+nav.menu-nav li.btn3:hover a, li.btn4:hover a, li.btn5:hover a { /*quand on passe sur le texte avec la souris il devient bleu*/
+  color: blue;
+}
+
+.menu-nav .btn3:hover a, .btn4:hover a{ /*création d'une bordure lorsqu'on passe sur les nav en à droite*/
+    border-top: 1px solid;
+}
+
+.menu-nav
+{
+  text-align: right; /*j'ai disposé le texte à droite de son bloc*/
+}
+
+main{
+    display: flex; /*le contenu du main sont disposé côte à côte avec de l'espace entre eux*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.left a, .right a, .enbas a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+    text-decoration: none;
+    color: black;
+}
+
+.left{
+    width: 60%; /*la partie gauche du main mesure 60% de la page, j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
+    background-color: #F2F2F2;
+    border: 2px none;
+    border-radius: 8px;
+}
+
+.card-body{ /*les div card concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
+    line-height: 2px;
+    margin-left: 12px;
+}
+
+.card{
+    background-color: white;
+    border: 2px none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card-title{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+.left h2{
+    text-align: center;
+}
+
+.left img{ /*taille des images avec la même bordure qu'auparavant*/
+    width: 220px;
+    height: 140px;
+    border: 2px none;
+    border-radius: 8px 8px 0px 0px;
+    margin: 4px;
+    display: block;
+}
+
+.image1
+{
+    display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left .fa-star{ /*modif des icones hébergements à marseille*/
+    color: blue;
+    font-size: 12px;
+}
+
+.textesousimg{ /*texte sous les images de la partie gauche du main*/
+    text-align: left;
+    margin-left: 22px;
+    font-weight: bolder;
+}
+
+.right{
+    width: 32%;
+    background-color: #F2F2F2;
+    border: 2px none;
+    border-radius: 8px;
+    height: 600px;
+}
+
+.right h2 i{ /*place de l'icone du titre "les plus populaires" */
+    margin-left: 100px;
+}
+
+.card-body1{ /*les div card1 concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
+    line-height: 4px;
+}
+
+.card1{
+    border: 2px none;
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 40px;
+    width: 80%;
+}
+
+.card-title1{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.card-text1{
+    font-size: 14px;
+}
+
+.right h2{
+    margin-left: 40px;
+    margin-bottom: 0px;
+}
+
+.right img{
+    width: 180px;
+    height: 140px;
+    border: 2px none;
+    border-radius: 8px 0px 0px 8px;
+    display: block;
+    margin: 4px;
+}
+
+.image2 .imageflotante{ /*grace à la balise float on peut écrire à droite des images de la partie droite du main*/
+    float: left;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.image2{
+    display: flex;
+    flex-direction: column;
+}
+
+.icon2{ /*mise en page des icones des etoiles des lieux les plus populaires */
+    color:blue;
+    font-size: 12px;
+    margin-top: 65px;
+}
+
+.icon1{ /*mise en page des icones des etoiles des lieux les plus populaires*/
+    color: blue;
+    font-size: 12px;
+    margin-top: 85px;
+}
+
+.ki{ /*les images supperposé de la partie Activité à Marseille*/
+    height: 20%;
+}
+
+.ko{
+    height: 20%;
+}
+
+.enbas
+{
+	display: flex; /*les figures en dessous du main sont côte à côte, centré sur par rapport au 100% de la page*/
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.enbas img
+{
+	width: 295px;
+    height: 154px;
+    border: 2px none;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.titresolo{
+    margin-left: 38px;
+    margin-bottom: 0px; /*titre des figures centré en dessous du main*/
+    text-align: center;
+}
+
+figure .imga3, figure .imga6 /* modification de la tailles de 2 images par rapport aux 4 autres*/
+{
+   width: 295px;
+   height: 350px;
+}
+
+.enbas .fig3, .fig6, .fig2, .fig1, .fig4, .fig5{ /*création des bordures autour des figures*/
+    border: 2px solid none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #555;
+}
+
+.enbas .fig2, .fig5{ /*placement des figure*/
+    margin-top: 20px;
+}
+
+.enbas .fig3, .fig6{ /*délimitation de la hauteur des figures cités*/
+    height: 373px;
+}
+
+.enbas figure
+{
+    text-align: center;
+    font-weight: bolder;
+	border: 2px none;
+    border-radius: 8px;
+    margin: 15px;
+    font-weight: bolder;
+}
+
+footer{
+    background-color: #F2F2F2; /*j'ai séparé le footer en 3 parties, les 3 alignés */ 
+    display: flex;
+}
+
+.fgauche, .fcentre, .fdroite{
+    width: 33%;
+}
+
+.fgauche{
+    margin-left: 20px;
+}
+
+
+@media(min-width: 768px) and (max-width: 1280px) /*adapté site au format tablette*/
+
+{
+
+    body{
+    width :100% ;
+    padding :0px ;
+    }
+    
+     header{
+     width: 100%;
+     display: flex;
+    }
+
+    .bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
+        background-color: white;
+        width: 340px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .navleft{
+        width: 1500px;
+    }
+
+    nav.menu-nav1 ul li 
+    {
+    display: inline-block; /*les catégories de la nav sont alignés et j'ai supprimé la puce*/
+    list-style-type: none;
+    margin: 5px;
+    }
+
+    .navright{
+        background-color: violet;
+        width: 0%;
+    }
+
+    .btn3{ /*position nav hébergements*/
+        position: absolute;
+        top: 20px;
+        right: 200px;
+    }
+    
+    .btn4{ /*position nav activité*/
+        position: absolute;
+        top: 20px;
+        right: 110px;
+    }
+
+    .btn5{ /*position nav s'inscrire*/
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .navright .menu-nav .btn5 a{ /*changement couleur bouton s'inscrire*/
+        color: blue;
+        font-weight: bolder;
+    }
+
+    main{
+        display: flex;
+    }
+    
+    
+    .left{
+    width :60%;
+    background-color: #F2F2F2;
+    }
+
+    .left h2{
+        text-align: center;
+    }
+    
+    .right{
+    width :290px;
+    height: 850px;
+    }
+
+    .pop{ /*span icone populaire*/
+        position: absolute;
+        top: 10px;
+        right: 45px;
+    }
+
+  .right img{
+        width: 220px;
+        margin-bottom: 13px;
+    }
+
+    .image2 .imageflotante{ /*grace à la balise float on peut écrire à droite des images de la partie droite du main*/
+        clear: both;
+        margin-right: 0px;
+    }
+
+    .card-body1{ /*les div card concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
+        line-height: 2px;
+        margin-left: 12px;
+    }
+
+    .card1{
+        width: 230px;
+        background-color: white;
+        border: 2px solid none;
+        border-radius: 8px;
+        box-shadow: 1px 1px 2px #555;
+    }
+
+    .right h2{
+        margin-left: 65px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+        width: 180px;
+    }
+
+    .icon1, .icon2{ /*mise en page des icones des etoiles des lieux les plus populaires */
+        color:blue;
+        font-size: 12px;
+        margin-top: 1px;
+    }
+
+    .right .fa-chart-line{ /*modif position icon du titre "les plus populaires"*/
+        position: absolute;
+        right: 18px;
+        top: 345px;
+    }
+
+    .titresolo{
+        text-align: center;
+        width: 90%;
+    }
+
+ .enbas{
+     width: 40%;
+     margin: auto;
+ }
+
+    .enbas img{
+	width: 400px;
+    height: 250px;
+    border: 2px none;
+    border-radius: 8px;
+    }
+    
+    .enbas .fig3, .fig6{ /*délimitation de la hauteur des figures cités*/
+    height: 270px;
+    }
+
+    }
+
+@media(max-width: 767px) /*adapté site au format smartphone*/
+
+{ 
+.card1{
+    width: 270px;
+}
+
+body
+{
+width :90%;
+padding :0px;
+}
+
+ header
+{
+ width: 110%;
+ margin: auto;
+}
+
+.bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
+    width: 243px;
+    height: 7%;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+button{
+    display: none; /*annulation "Rechercher" partie mobile du site */ 
+}
+
+.search{ /*appariton du logo recherche dans la bare de recherche*/
+    visibility: visible;
+    color:white;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.left
+{
+width :111%;
+margin: auto;
+background-color: white;
+}
+
+.right
+{
+width : 111%;
+}
+
+main{ /*modification d'ordre de la partie gauche et droite du main*/
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menu-nav .btn3:hover a{ /*création d'une bordure lorsqu'on passe sur la nav "Hégergement*/
+    border-bottom: 2px solid blue;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn4:hover a{ /*création d'une bordure lorsqu'on passe sur la nav "activités*/
+    border-bottom: 2px solid blue;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn3 a{ /*bordure en bas de hébergement*/
+    border-bottom: 2px solid gray;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn4 a{ /*bordure en bas de activités*/
+    border-bottom: 2px solid gray;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.navright .menu-nav .btn5 a{ /*changement couleur bouton s'inscrire*/
+    color: blue;
+    font-weight: bolder;
+}
+
+.menu-nav{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+
+.menu-nav ul{
+    display: flex;
+    width: 100%;
+}
+
+.btn5{
+    position: absolute;
+    bottom: 80px;
+    right: 2px;
+}
+
+.btn3{
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.btn4{
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.texterech{ /*modif texte au dessus bare de recherche*/
+    margin-top: 50px;
+    width: 130%;
+}
+
+span{ /*partie en gras de la partie au dessus de la bare de recherche*/
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.navright{
+    width: 0%;
+}
+
+.menu-nav1 ul{ /*modif position des nav hergements...*/
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-nav1 ul li{ /*modif taille contenant les nav*/
+    width: 190px;
+}
+
+.menu-nav1 p{
+    margin-right: 100px;
+    margin-bottom: 2px;
+}
+
+.menu-nav1{ /*augmentation de la largeur de la partie gauche des nav*/
+    width: 130%;
+}
+
+.right h2 i{ /*place de l'icone du titre "les plus populaires" */
+    margin-left: 50px;
+}
+
+.right img{
+    width: 120px;
+    height: 140px;
+    border: 2px none;
+    border-radius: 8px 0px 0px 8px;
+    display: block;
+    margin: 4px;
+}
+
+.left img{ /*taille des images avec la même bordure qu'auparavant*/
+    width: 280px;
+    height: 154px;
+    border: 2px none;
+    border-radius: 8px;
+    margin: 4px;
+    display: block;
+}
+
+.left .card{
+    border: 2px solid none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #555;
+}
+
+.left h2{ /*placement titre hébergement à marseille*/
+    text-align: center;
+}
+
+.titresolo{ /*placement titre "activités à marseille*/
+    text-align: center;
+    width: 85%;
+}
+.enbas{
+    width: 110%;
+    margin: auto;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.enbas img
+{
+	width: 340px;
+    height: 154px;
+    border: 2px none;
+    border-radius: 8px;
+}
+
+.enbas .fig3, .fig6{ /*délimitation de la hauteur des figures cités*/
+    height: 180px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 105%;
+    background-color: white;
+}
+
+.fgauche, .fcentre, .fdroite{
+    width: 100%;
+}
+
+.fcentre, .fdroite{
+    margin-left: 20px;
+}
+
+
+.textesousimg{ /*placement texte "afficher plus"*/
+    text-align: center;
+}
+
+.texteinfo{ /*texte "Plus de 500 logements*/
+    width: 140%;
+}
+}
+
+@media(max-width: 350px) /*adapté site au format smartphone*/
+
+{ 
+.card1{
+    width: 270px;
+}
+
+body
+{
+width :90%;
+padding :0px;
+}
+
+ header
+{
+ width: 110%;
+ margin: auto;
+}
+
+.bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
+    width: 243px;
+    height: 7%;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+button{
+    display: none; /*annulation "Rechercher" partie mobile du site */ 
+}
+
+.search{ /*appariton du logo recherche dans la bare de recherche*/
+    visibility: visible;
+    color:white;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.left
+{
+width :111%;
+margin: auto;
+background-color: white;
+}
+
+.right
+{
+width : 114%;
+}
+
+main{ /*modification d'ordre de la partie gauche et droite du main*/
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menu-nav .btn3:hover a{ /*création d'une bordure lorsqu'on passe sur la nav "Hégergement*/
+    border-bottom: 2px solid blue;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn4:hover a{ /*création d'une bordure lorsqu'on passe sur la nav "activités*/
+    border-bottom: 2px solid blue;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn3 a{ /*bordure en bas de hébergement*/
+    border-bottom: 2px solid gray;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn4 a{ /*bordure en bas de activités*/
+    border-bottom: 2px solid gray;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.navright .menu-nav .btn5 a{ /*changement couleur bouton s'inscrire*/
+    color: blue;
+    font-weight: bolder;
+}
+
+.menu-nav{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+
+.menu-nav ul{
+    display: flex;
+    width: 100%;
+}
+
+.btn5{
+    position: absolute;
+    bottom: 80px;
+    right: 2px;
+}
+
+.btn3{
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.btn4{
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.texterech{ /*modif texte au dessus bare de recherche*/
+    margin-top: 50px;
+    width: 130%;
+}
+
+span{ /*partie en gras de la partie au dessus de la bare de recherche*/
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.navright{
+    width: 0%;
+}
+
+.menu-nav1 ul{ /*modif position des nav hergements...*/
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-nav1 ul li{ /*modif taille contenant les nav*/
+    width: 190px;
+}
+
+.menu-nav1 p{
+    margin-right: 100px;
+    margin-bottom: 2px;
+}
+
+.menu-nav1{ /*augmentation de la largeur de la partie gauche des nav*/
+    width: 130%;
+}
+
+.right h2 i{ /*place de l'icone du titre "les plus populaires" */
+    margin-left: 50px;
+}
+
+.right img{
+    width: 120px;
+    height: 140px;
+    border: 2px none;
+    border-radius: 8px 0px 0px 8px;
+    display: block;
+    margin: 4px;
+}
+
+.left img{ /*taille des images avec la même bordure qu'auparavant*/
+    width: 280px;
+    height: 154px;
+    border: 2px none;
+    border-radius: 8px;
+    margin: 4px;
+    display: block;
+}
+
+.left .card{
+    border: 2px solid none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #555;
+}
+
+.left h2{ /*placement titre hébergement à marseille*/
+    text-align: center;
+}
+
+.titresolo{ /*placement titre "activités à marseille*/
+    text-align: center;
+    width: 85%;
+}
+.enbas{
+    width: 110%;
+    margin: auto;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.enbas img
+{
+	width: 250px;
+    height: 154px;
+    border: 2px none;
+    border-radius: 8px;
+}
+
+.enbas .fig3, .fig6{ /*délimitation de la hauteur des figures cités*/
+    height: 180px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 105%;
+    background-color: white;
+}
+
+.fgauche, .fcentre, .fdroite{
+    width: 100%;
+}
+
+.fcentre, .fdroite{
+    margin-left: 20px;
+}
+
+
+.textesousimg{ /*placement texte "afficher plus"*/
+    text-align: center;
+}
+
+.texteinfo{ /*texte "Plus de 500 logements*/
+    width: 140%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

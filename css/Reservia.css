@@ -589,11 +589,12 @@ button{
 {
 width :100%;
 margin: auto;
+background-color: white;
 }
 
 .right
 {
-width :100% ;
+width : 100%;
 margin: auto;
 }
 
@@ -753,7 +754,7 @@ footer{
 
 
 .textesousimg{ /*placement texte "afficher plus"*/
-    margin-left: 52px;
+    text-align: center;
 }
 
 .texteinfo{ /*texte "Plus de 500 logements*/

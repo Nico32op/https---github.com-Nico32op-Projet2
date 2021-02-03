@@ -722,7 +722,8 @@ span{ /*partie en gras de la partie au dessus de la bare de recherche*/
     width: 85%;
 }
 .enbas{
-    width: 100%;
+    width: 40%;
+    margin: auto;
 }
 .enbas img
 {

@@ -550,18 +550,18 @@ footer{
 
 { 
 .card1{
-    width: 330px;
+    width: 270px;
 }
 
 body
 {
-width :100%;
+width :90%;
 padding :0px;
 }
 
  header
 {
- width: 100%;
+ width: 110%;
  margin: auto;
 }
 
@@ -587,15 +587,14 @@ button{
 
 .left
 {
-width :100%;
+width :111%;
 margin: auto;
 background-color: white;
 }
 
 .right
 {
-width : 100%;
-margin: auto;
+width : 111%;
 }
 
 main{ /*modification d'ordre de la partie gauche et droite du main*/
@@ -699,8 +698,17 @@ span{ /*partie en gras de la partie au dessus de la bare de recherche*/
     margin-left: 50px;
 }
 
+.right img{
+    width: 120px;
+    height: 140px;
+    border: 2px none;
+    border-radius: 8px 0px 0px 8px;
+    display: block;
+    margin: 4px;
+}
+
 .left img{ /*taille des images avec la même bordure qu'auparavant*/
-    width: 315px;
+    width: 280px;
     height: 154px;
     border: 2px none;
     border-radius: 8px;
@@ -723,12 +731,14 @@ span{ /*partie en gras de la partie au dessus de la bare de recherche*/
     width: 85%;
 }
 .enbas{
-    width: 40%;
+    width: 110%;
     margin: auto;
+    background-color: white;
+    flex-wrap: wrap;
 }
 .enbas img
 {
-	width: 315px;
+	width: 340px;
     height: 154px;
     border: 2px none;
     border-radius: 8px;
@@ -741,7 +751,8 @@ span{ /*partie en gras de la partie au dessus de la bare de recherche*/
 footer{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 105%;
+    background-color: white;
 }
 
 .fgauche, .fcentre, .fdroite{
@@ -758,7 +769,234 @@ footer{
 }
 
 .texteinfo{ /*texte "Plus de 500 logements*/
-    width: 150%;
+    width: 140%;
+}
+}
+
+@media(max-width: 350px) /*adapté site au format smartphone*/
+
+{ 
+.card1{
+    width: 270px;
+}
+
+body
+{
+width :90%;
+padding :0px;
+}
+
+ header
+{
+ width: 110%;
+ margin: auto;
+}
+
+.bar-de-recherche{ /*modif bar de recherche pour être lisible raisponsive*/
+    width: 243px;
+    height: 7%;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+button{
+    display: none; /*annulation "Rechercher" partie mobile du site */ 
+}
+
+.search{ /*appariton du logo recherche dans la bare de recherche*/
+    visibility: visible;
+    color:white;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.left
+{
+width :111%;
+margin: auto;
+background-color: white;
+}
+
+.right
+{
+width : 114%;
+}
+
+main{ /*modification d'ordre de la partie gauche et droite du main*/
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menu-nav .btn3:hover a{ /*création d'une bordure lorsqu'on passe sur la nav "Hégergement*/
+    border-bottom: 2px solid blue;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn4:hover a{ /*création d'une bordure lorsqu'on passe sur la nav "activités*/
+    border-bottom: 2px solid blue;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn3 a{ /*bordure en bas de hébergement*/
+    border-bottom: 2px solid gray;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.menu-nav .btn4 a{ /*bordure en bas de activités*/
+    border-bottom: 2px solid gray;
+    border-top: 0px solid;
+    padding-bottom: 15px;
+}
+
+.navright .menu-nav .btn5 a{ /*changement couleur bouton s'inscrire*/
+    color: blue;
+    font-weight: bolder;
+}
+
+.menu-nav{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 15px;
+}
+
+.menu-nav ul{
+    display: flex;
+    width: 100%;
+}
+
+.btn5{
+    position: absolute;
+    bottom: 80px;
+    right: 2px;
+}
+
+.btn3{
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.btn4{
+    padding: 15px;
+    width: 50%;
+    text-align: center;
+}
+
+.texterech{ /*modif texte au dessus bare de recherche*/
+    margin-top: 50px;
+    width: 130%;
+}
+
+span{ /*partie en gras de la partie au dessus de la bare de recherche*/
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.navright{
+    width: 0%;
+}
+
+.menu-nav1 ul{ /*modif position des nav hergements...*/
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-nav1 ul li{ /*modif taille contenant les nav*/
+    width: 190px;
+}
+
+.menu-nav1 p{
+    margin-right: 100px;
+    margin-bottom: 2px;
+}
+
+.menu-nav1{ /*augmentation de la largeur de la partie gauche des nav*/
+    width: 130%;
+}
+
+.right h2 i{ /*place de l'icone du titre "les plus populaires" */
+    margin-left: 50px;
+}
+
+.right img{
+    width: 120px;
+    height: 140px;
+    border: 2px none;
+    border-radius: 8px 0px 0px 8px;
+    display: block;
+    margin: 4px;
+}
+
+.left img{ /*taille des images avec la même bordure qu'auparavant*/
+    width: 280px;
+    height: 154px;
+    border: 2px none;
+    border-radius: 8px;
+    margin: 4px;
+    display: block;
+}
+
+.left .card{
+    border: 2px solid none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #555;
+}
+
+.left h2{ /*placement titre hébergement à marseille*/
+    text-align: center;
+}
+
+.titresolo{ /*placement titre "activités à marseille*/
+    text-align: center;
+    width: 85%;
+}
+.enbas{
+    width: 110%;
+    margin: auto;
+    background-color: white;
+    flex-wrap: wrap;
+}
+.enbas img
+{
+	width: 250px;
+    height: 154px;
+    border: 2px none;
+    border-radius: 8px;
+}
+
+.enbas .fig3, .fig6{ /*délimitation de la hauteur des figures cités*/
+    height: 180px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 105%;
+    background-color: white;
+}
+
+.fgauche, .fcentre, .fdroite{
+    width: 100%;
+}
+
+.fcentre, .fdroite{
+    margin-left: 20px;
+}
+
+
+.textesousimg{ /*placement texte "afficher plus"*/
+    text-align: center;
+}
+
+.texteinfo{ /*texte "Plus de 500 logements*/
+    width: 140%;
 }
 }
 
